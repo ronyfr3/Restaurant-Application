@@ -1,0 +1,128 @@
+.cusdashb {
+  @include flex(row, flex-start, flex-start);
+  width: 100%;
+  .user_orderPage {
+    // flex: 5;
+    box-shadow: $shadow1;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    .yyydkcdc {
+      @include flex(column, flex-start, flex-start);
+      h2 {
+        text-transform: capitalize;
+        color: rgb(1, 156, 123);
+        position: relative;
+        margin-bottom: 0.4rem;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 50%;
+          height: 2px;
+          background-color: rgb(1, 156, 123);
+        }
+      }
+      p {
+        text-transform: lowercase;
+        font-weight: 300;
+        color: gray;
+        span {
+          color: rgb(98, 100, 100);
+          font-weight: 500;
+          text-transform: capitalize;
+          margin-right: 0.1rem;
+        }
+      }
+    }
+    button {
+      @include flex(row, center, center);
+      @include btn2;
+      background-color: rgb(255, 255, 255);
+      color: rgb(116, 116, 116);
+      padding: 5px 8px;
+      .FiLogOut {
+        margin-right: 0.1rem;
+        font-size: 17px;
+      }
+    }
+  }
+  .oaksdy {
+    // flex: 1;
+  }
+  .dshpar {
+    padding: 1rem;
+    width: 100%;
+    h2 {
+      margin-bottom: 1rem;
+    }
+    .jeityn {
+      @include flex(row, center, space-between);
+      //   border: $border;
+      @include media(P) {
+        @include flex(column, flex-start, flex-start);
+      }
+      @include media(PL) {
+        @include flex(column, flex-start, flex-start);
+      }
+      .hskdgjh {
+        @include flex(row, center, space-between);
+        box-shadow: $shadow1;
+        padding: 1rem;
+        margin-right: 2rem;
+        width: 100%;
+        height: 60px;
+        @include media(P) {
+          margin: 1rem 0;
+        }
+        @include media(PL) {
+          margin: 1rem 0;
+        }
+        .poiluykhg {
+          @include flex(column, flex-start, flex-start);
+          small {
+            text-transform: capitalize;
+            margin-top: 0.3rem;
+          }
+          p {
+            margin-right: 0.2rem;
+            color: rgb(255, 136, 0);
+          }
+        }
+        .HiUserGroup {
+          color: rgb(241, 141, 74);
+          font-size: 25px;
+        }
+      }
+      .ppoiuy {
+        box-shadow: $shadow1;
+        padding: 1rem;
+        @include flex(row, center, space-between);
+        width: 100%;
+        height: 60px;
+        .FaRegHandshake {
+          color: rgb(241, 141, 74);
+          font-size: 25px;
+        }
+        .skjgwo {
+          @include flex(column, flex-start, flex-start);
+          small {
+            text-transform: capitalize;
+            margin-top: 0.3rem;
+          }
+          .wschg {
+            @include flex(row, center, center);
+            p {
+              margin-right: 0.2rem;
+            }
+            p {
+              color: rgb(255, 136, 0);
+            }
+          }
+        }
+      }
+    }
+  }
+}

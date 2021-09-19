@@ -1,0 +1,86 @@
+.footer {
+  @include flex(row, flex-start, space-between);
+  padding: 2em 0;
+  position: relative;
+  @include media(P) {
+    @include flex(column, center, center);
+  }
+  @include media(PL) {
+    @include flex(column, center, center);
+  }
+  background-color: #f5f5f5;
+  width: 100%;
+  text-transform: capitalize;
+  .footerImage_wrapper {
+    flex: 1;
+    @include flex(column, center, center);
+    margin-bottom: 1.5rem;
+    .akuygaks {
+      @include flex(column, center, center);
+      margin-bottom: 0.3rem;
+      p {
+        text-transform: capitalize;
+        margin-top: 0.2rem;
+      }
+      img {
+        width: 90px;
+        height: 90px;
+      }
+    }
+    .contact_wrapper {
+      @include flex(column, center, center);
+    }
+    @include media(P) {
+      @include flex(column, center, center);
+    }
+    @include media(PL) {
+      @include flex(column, center, center);
+    }
+  }
+  .footer_wrapper {
+    flex: 3;
+    @include flex(row, flex-start, space-around);
+    @include media(P) {
+      @include flex(column, flex-start, center);
+    }
+    @include media(PL) {
+      @include flex(column, flex-start, center);
+    }
+    .navigation_wrapper {
+      @include flex(column, flex-start, center);
+      margin-bottom: 1rem;
+    }
+
+    .openClose_wrapper {
+      @include flex(column, flex-start, center);
+      margin-bottom: 1rem;
+    }
+    .social_wrapper {
+      @include flex(row, flex-start, center);
+      margin-bottom: 1rem;
+      ul {
+        @include flex(row, flex-start, center);
+        li {
+          @include flex(row, flex-start, center);
+          font-size: 2em;
+          &:nth-child(2) {
+            margin: 0 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+.gotop {
+  position: absolute;
+  top: -1.2rem;
+  right: 1rem;
+  width: 50px;
+  .goToTop {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: $c5;
+    font-size: 40px;
+    color: white;
+  }
+}

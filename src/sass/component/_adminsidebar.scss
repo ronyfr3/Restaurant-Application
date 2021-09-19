@@ -1,0 +1,56 @@
+.sidebar_wrapper {
+  @include flex(column, center, flex-start);
+  background-color: rgb(10, 7, 7);
+  // position: absolute;
+  // top: 110;
+  // left: 0;
+  width: 180px;
+  min-height: 100vh;
+  z-index: 1000;
+  overflow: hidden;
+  .skjhvbs {
+    @include flex(column, center, center);
+    width: 100%;
+    margin: 2rem 0 1.5rem 0;
+    img {
+      border-radius: 50%;
+      width: 65px;
+      height: 65px;
+      margin-bottom: 0.5rem;
+    }
+    .cusname {
+      text-transform: capitalize;
+      color: white;
+      font-size: 14px;
+      margin-bottom: 0.2rem;
+    }
+
+    .cusemail {
+      text-transform: lowercase;
+      color: white;
+      font-size: 13px;
+    }
+    button {
+      outline: none;
+      border: 1px solid green;
+      background-color: transparent;
+      color: green;
+      padding: 5px 30px;
+      cursor: pointer;
+      margin-top: 0.8rem;
+    }
+  }
+  .shydvjh {
+    @include flex(column, flex-start, center);
+    p {
+      color: white;
+      margin: 0.8rem 0;
+      text-transform: capitalize;
+      width: 100%;
+      cursor: pointer;
+      &:hover {
+        color: green;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.sdvsdvsb {
+  @include flex(column, center, center);
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  .airrij {
+    @include flex(column, center, center);
+    padding: 40px;
+    background-color: white;
+    border-radius: 5px;
+    width: 330px;
+    box-shadow: $shadow2;
+    position: relative;
+    .closeajas {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 2em;
+      margin: 10px 15px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    form {
+      @include flex(column, center, center);
+      margin-top: 1em;
+      width: 100%;
+      h2 {
+        text-transform: capitalize;
+      }
+      input {
+        margin: 0.5rem 0;
+        padding: 5px;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.sdhgvsj {
+  @include flex(column, center, center);
+  width: 100%;
+  margin: 0.5rem 0;
+  @include table;
+}
+.asdoswoiud {
+  cursor: pointer;
+}
+.grupdate {
+  cursor: pointer;
+  color: green;
+  font-size: 20px;
+}
+.aidelete {
+  font-size: 20px;
+  color: crimson;
+  cursor: pointer;
+}

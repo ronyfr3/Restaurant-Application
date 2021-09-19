@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: $fontFamily;
+  // text-transform: capitalize;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+a,
+small,
+span {
+  color: #3b3b3b;
+}
+p,
+a {
+  @include font-size($p-font-sizes);
+}
+h1 {
+  @include font-size($h1-font-sizes);
+}
+h2 {
+  @include font-size($h2-font-sizes);
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $fontFamily;
+  overflow-x: hidden;
+}
+.app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}

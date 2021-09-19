@@ -1,0 +1,24 @@
+.about_section {
+  @include flex(column, center, center);
+  padding: 20px;
+  .about_info_text {
+    text-align: center;
+    margin: 1rem;
+    .info_paragraph {
+      text-align: center;
+    }
+  }
+  .info_bottom_paragraph {
+    @include flex(column, center, center);
+    text-align: center;
+    small {
+      margin-top: 0.3rem;
+    }
+    .thanks {
+      color: coral;
+      margin: 1em;
+      font-family: cursive;
+      font-weight: 600;
+    }
+  }
+}

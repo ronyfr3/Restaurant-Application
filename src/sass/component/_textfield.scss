@@ -1,0 +1,104 @@
+.formik_wrapper {
+  @include flex(column, center, center);
+  padding: 20px;
+  .formik_form {
+    box-shadow: 0 0 5px 3px rgb(212, 212, 212);
+    padding: 30px;
+    border-radius: 7px;
+    position: relative;
+    .errmsg {
+      color: crimson;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      text-transform: lowercase;
+    }
+  }
+}
+.textfield {
+  label {
+    text-transform: capitalize;
+    @include font-size($p-font-sizes);
+    color: #5c5c5c;
+  }
+  input {
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 0.3rem;
+    border: 1px solid #a0a0a0;
+    outline: none;
+    border-radius: 4px;
+  }
+  .formik_error {
+    font-size: 12px;
+    text-transform: lowercase;
+    color: crimson;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.reg_btn {
+  @include btn;
+}
+.reset_btn {
+  @include btn2;
+  margin-left: 1rem;
+}
+.reg_to_log {
+  margin-top: 0.5rem;
+  .askhbssw {
+    color: gray;
+  }
+}
+
+//login
+.login_wrapper {
+  @include flex(column, center, center);
+  padding: 20px;
+  form {
+    box-shadow: 0 0 5px 3px rgb(212, 212, 212);
+    padding: 30px;
+    border-radius: 7px;
+    label {
+      text-transform: capitalize;
+      @include font-size($p-font-sizes);
+      color: #5c5c5c;
+    }
+    h1 {
+      margin: 0.7rem 0;
+    }
+    input {
+      width: 100%;
+      padding: 4px;
+      margin-bottom: 0.3rem;
+      border: 1px solid #a0a0a0;
+      outline: none;
+      border-radius: 4px;
+    }
+    button {
+      @include btn;
+    }
+    small {
+      color: gray;
+      margin-top: 0.5rem;
+      a {
+        text-decoration: underline;
+        color: rgb(12, 12, 145);
+      }
+    }
+    .kahdbad {
+      @include flex(column, center, center);
+
+      .dhuvisdv {
+        text-decoration: underline;
+        color: blue;
+        margin: 1rem 0;
+        cursor: pointer;
+      }
+    }
+  }
+  .errmsg {
+    color: crimson;
+    text-transform: lowercase;
+  }
+}

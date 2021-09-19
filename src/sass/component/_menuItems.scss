@@ -1,0 +1,53 @@
+.menuItems {
+  @include flex(row, flex-start, center);
+  padding: 1em;
+  .sidebar_menu {
+    @include flex(column, center, center);
+    flex: 1;
+    margin-right: 1rem;
+    table {
+      @include flex(column, center, center);
+      tr {
+        @include flex(column, flex-start, center);
+        td {
+          margin: 0.3rem 0;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .asldhbl {
+    text-transform: uppercase;
+    color: coral;
+    margin: 0.5rem 0;
+  }
+  .menuLists {
+    flex: 3;
+  }
+}
+
+.lMenu {
+  #sduhdbu {
+    color: $c5;
+    margin: 1rem 0;
+  }
+  .lMenu_items {
+    margin-bottom: 0.5rem;
+    padding: 0.3rem 0.3rem;
+    box-shadow: $shadow1;
+    border-radius: 0.2rem;
+    .titdes {
+      @include flex(column, flex-start, center);
+      cursor: pointer;
+      b {
+        font-weight: 500;
+      }
+      small {
+        margin: 0.3rem 0;
+      }
+      p {
+        color: rgb(46, 182, 5);
+      }
+    }
+  }
+}

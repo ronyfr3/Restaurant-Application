@@ -1,0 +1,56 @@
+.admin_dashboard {
+  @include flex(row, flex-start, flex-start);
+}
+
+//profile
+.user_profile {
+  @include flex(column, flex-start, flex-start);
+  margin: 1rem;
+  box-shadow: $shadow1;
+  padding: 1rem;
+  .profile_data {
+    @include flex(column, flex-start, flex-start);
+    p {
+      font-weight: 300;
+      color: gray;
+      text-transform: lowercase;
+      span {
+        font-weight: 500;
+        text-transform: capitalize;
+        margin-right: 0.1rem;
+      }
+    }
+  }
+}
+
+//products
+.admin_dashboard_info {
+  margin: 1rem;
+  .dsgfhjk {
+    // @include flex(column, center, center);
+    box-shadow: $shadow1;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    p {
+      text-transform: capitalize;
+      font-weight: 500;
+    }
+    span {
+      color: orange;
+      font-weight: 500;
+      margin-left: 0.3rem;
+    }
+  }
+  .admin_select_field {
+    @include flex(column, flex-start, flex-start);
+    .select {
+      margin: 0.5rem 0;
+      select {
+        padding: 0.5rem;
+      }
+    }
+    button {
+      @include btn;
+    }
+  }
+}
