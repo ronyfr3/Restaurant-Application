@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "https://qrtech.co.uk/api";
+const url = "YOUR API";
 
 // access_token
 const access_token = JSON.parse(localStorage.getItem("auth"))?.user
