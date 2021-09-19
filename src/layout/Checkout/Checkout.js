@@ -68,7 +68,7 @@ const Checkout = () => {
     if (paidBy && paidBy.length) {
       Axios({
         method: "post",
-        url: "https://qrtech.co.uk/api/new_order",
+        url: "YOUR ORDER API",
         data: orderDetails,
         headers: {
           "Content-Type": "application/json",
